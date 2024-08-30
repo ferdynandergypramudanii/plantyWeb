@@ -31,7 +31,7 @@
       <div id="nav-menu" class="absolute top-0 left-[-100%] min-h-[100vh] w-full bg-green-950/80 backdrop-blur-sm flex items-center justify-center duration-300 overflow-hidden lg:static lg:min-h-fit lg:bg-transparent lg:w-auto">
         <ul class="flex flex-col items-center gap-8 lg:flex-row">
           <li>
-            <a href="#home" class="nav-link">Home</a>
+            <a href="#home" class="nav-link active">Home</a>
           </li>
 
           <li>
@@ -78,7 +78,7 @@
         <!-- Perubahan saat lg jadi flex-row -->
         <div class="flex flex-col items-center gap-x-5 lg:flex-row">
           <!-- content -->
-          <div class="w-full space-y-5 lg:w-1/2">
+          <div class="home__data w-full space-y-5 lg:w-1/2">
             <h1>
               <span class="text-yellow-400">Plants</span> make a
               <br>
@@ -118,7 +118,7 @@
 
           <!-- image -->
           <div class="w-full relative lg:w-1/2">
-            <img src="assets/img/home.png" alt="home_image">
+            <img src="assets/img/home.png" alt="home_image" class="home__image">
 
              <!-- leaf -->
              <div class="absolute -top-10 right-0 opacity-30 xl:top-5 animate-movingY">
@@ -145,7 +145,7 @@
       <section id="services" class="bg-white text-green-900 py-20">
         <div class="container w-full grid grid-cols-1 md:grid-cols-2 gap-8 lg:grid-cols-3 xl:grid-cols-4">
           <!-- card 1 -->
-          <div class="border border-green-900 p-5 cursor-pointer rounded-md hover:shadow-2xl hover:translate-y-1 duration-300 space-y-5">
+          <div class="service__card border border-green-900 p-5 cursor-pointer rounded-md hover:shadow-2xl hover:translate-y-1 duration-300 space-y-5">
             <div class="flex items-center gap-5">
               <i class="ri-truck-line text-3xl md:text-4xl xl:text-5xl"></i>
               <p class="md:text-lg font-bold">Fast <br>
@@ -156,7 +156,7 @@
           </div>
 
           <!-- card 2 -->
-          <div class="border border-green-900 p-5 cursor-pointer rounded-md hover:shadow-2xl hover:translate-y-1 duration-300 space-y-5">
+          <div class="service__card border border-green-900 p-5 cursor-pointer rounded-md hover:shadow-2xl hover:translate-y-1 duration-300 space-y-5">
             <div class="flex items-center gap-5">
               <i class="ri-customer-service-line text-3xl md:text-4xl xl:text-5xl"></i>
               <p class="md:text-lg font-bold">Great Customer <br>
@@ -167,7 +167,7 @@
           </div>
 
           <!-- card 3 -->
-          <div class="border border-green-900 p-5 cursor-pointer rounded-md hover:shadow-2xl hover:translate-y-1 duration-300 space-y-5">
+          <div class="service__card border border-green-900 p-5 cursor-pointer rounded-md hover:shadow-2xl hover:translate-y-1 duration-300 space-y-5">
             <div class="flex items-center gap-5">
               <i class="ri-plant-line text-3xl md:text-4xl xl:text-5xl"></i>
               <p class="md:text-lg font-bold">Original <br>
@@ -178,7 +178,7 @@
           </div>
 
           <!-- card 4 -->
-          <div class="border border-green-900 p-5 cursor-pointer rounded-md hover:shadow-2xl hover:translate-y-1 duration-300 space-y-5">
+          <div class="service__card border border-green-900 p-5 cursor-pointer rounded-md hover:shadow-2xl hover:translate-y-1 duration-300 space-y-5">
             <div class="flex items-center gap-5">
               <i class="ri-money-dollar-circle-line text-3xl md:text-4xl xl:text-5xl"></i>
               <p class="md:text-lg font-bold">Affordable <br>
@@ -194,11 +194,11 @@
 
     <!-- About Us   -->
       <section id="about" class="relative overflow-hidden">
-        <div class="absolute -top-0 -right-12 opacity-50">
+        <div class="about__leaf absolute -top-0 -right-12 opacity-50">
           <img src="./assets/img/leaf-3.png" alt="leaf-image" class="w-40 md:w-52 xl:w-64">
         </div>
 
-        <div class="flex flex-col items-center gap-3 text-center mb-10 md:mb-20">
+        <div class="about__top flex flex-col items-center gap-3 text-center mb-10 md:mb-20">
           <h2 class="title">About Us</h2>
           <p class="max-w-2xl">Follow instruction for more</p>
         </div>
@@ -208,11 +208,11 @@
           <div class="flex flex-col items-center lg:flex-row gap-5">
             <!-- image -->
             <div class="w-full lg:w-1/2">
-              <img src="./assets/img/plant-1.png" alt="about_image" class="w-full sm:w-2/3 lg:w-full xl:w-2/3 mx-auto">
+              <img src="./assets/img/plant-1.png" alt="about_image" class="about__item__1-img w-full sm:w-2/3 lg:w-full xl:w-2/3 mx-auto">
             </div>
 
             <!-- content -->
-            <div class="w-full lg:w-1/2">
+            <div class="about__item__1-content w-full lg:w-1/2">
               <div class="space-y-5">
                 <h3>
                   Make your <span class="text-yellow-500">organic</span>  <br>
@@ -227,12 +227,12 @@
           <!-- item 2 -->
           <div class="flex flex-col items-center lg:flex-row-reverse gap-5">
             <!-- image -->
-            <div class="w-full lg:w-1/2">
+            <div class="about__item__2-img w-full lg:w-1/2">
               <img src="./assets/img/plant-2.png" alt="about_image" class="w-full sm:w-2/3 lg:w-full xl:w-2/3 mx-auto">
             </div>
 
             <!-- content -->
-            <div class="w-full lg:w-1/2">
+            <div class="about__item__2-content w-full lg:w-1/2">
               <div class="space-y-5">
                 <h3>
                   Come with us <br>
@@ -251,7 +251,7 @@
 
     <!-- Popular    -->
       <section id="popular" class="bg-green-900">
-        <div class="flex flex-col items-center gap-3 text-center mb-40">
+        <div class="popular__top flex flex-col items-center gap-3 text-center mb-40">
           <h2 class="title">Your Choice Plant</h2>
           <p class="max-w-2xl">Follow instruction for more</p>
         </div>
@@ -355,16 +355,16 @@
     <!-- Review -->
     <section id="review" class="relative mb-20 md:mb-28 overflow-hidden">
 
-      <div class="absolute -top-8 -left-12 opacity-50">
+      <div class="review__leaf absolute -top-8 -left-12 opacity-50">
         <img src="./assets/img/leaf-4.png" alt="leaf-image" class="w-40 md:w-52 xl:w-56">
       </div>
 
-      <div class="flex flex-col items-center gap-3 text-center mb-16">
+      <div class="review__top flex flex-col items-center gap-3 text-center mb-16">
         <h2 class="title">Customer Review</h2>
         <p class="max-w-2xl">Follow instruction for more</p>
       </div>  
 
-      <div class="container">
+      <div class="review__swiper container">
         <div class="swiper py-12">
           <ul class="swiper-wrapper">
             <li class="swiper-slide">
@@ -464,7 +464,7 @@
 
 
     <!-- social icon -->
-    <div class=" container mt-16 mb-10">
+    <div class="footer__icon container mt-16 mb-10">
         <div class="border-b border-green-500 relative">
           <div class="absolute top-0 transform -translate-y-1/2 left-0 right-0 max-w-36 mx-auto">
             <div class="bg-yellow-100 text-lg text-center space-x-2">
@@ -479,18 +479,18 @@
 
 
     <!-- content -->
-    <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 text-center md:text-start">
+    <div class="footer__content container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 text-center md:text-start">
       <!-- item 1 -->
       <div>
         <div class="text-7xl text-green-700 text-center inline-block">
           <i class="ri-leaf-fill"></i>
           <p class="font-Lobster text-xl sm:text-2xl">PlantyGreen</p>
         </div>   
-    </div>
+      </div>
         
-    <!-- item 2 -->
-    <div>
-      <p class="mb-5 font-bold text-xl">Quick Link</p>
+      <!-- item 2 -->
+      <div>
+        <p class="mb-5 font-bold text-xl">Quick Link</p>
         <div class="flex flex-col gap-1">
           <a href="">Plants</a>
           <a href="">Flower</a>
@@ -498,20 +498,20 @@
           <a href="">Seeds</a>
           <a href="">Shipping</a>
         </div>
-    </div>
+      </div>
 
-    <!-- item 3 -->
-    <div>
-      <p class="mb-5 font-bold text-xl">Popular Services</p>
+      <!-- item 3 -->
+      <div>
+        <p class="mb-5 font-bold text-xl">Popular Services</p>
         <div class="flex flex-col gap-1">
           <a href="">Tree Planting</a>
           <a href="">Grass Cutting</a>
           <a href="">Weeds Control</a>
           <a href="">Project</a>
         </div>
-    </div>
+      </div>
 
-    <!-- item 4 -->
+      <!-- item 4 -->
       <div>
         <p class="mb-5 font-bold text-xl">Contact Us</p>
         <div class="flex flex-col gap-1">
@@ -521,23 +521,31 @@
           <p>1234 Tailwind Ave, CSS City, Webland 56789, USA</p>
         </div>
       </div>
+    </div>
 
       <!-- copyright -->
-      <div class="container">
+      <div class="copy__right container">
         <p class="text-center mt-10 opacity-50">Copyright &copy; 2024 LightCode. All rights reserved.</p>
       </div>
 
       <!-- floral image -->
-      <div class="absolute bottom-0 left-0 opacity-20 pointer-events-none">
+      <div class="footer__floral absolute bottom-0 left-0 opacity-20 pointer-events-none">
         <img src="./assets/img/floral-1.png" alt="floral_image" class="w-full lg:w-1/2">
       </div>
   </footer>
 
 
-   <!-- Swiperjs -->
-   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  
-   <script src="main.js"></script>
+  <!-- Scroll Up -->
+  <a href="#" class="fixed right-4 -bottom-1/2 bg-yellow-500 shadow-sm inline-block px-3 py-1 md:px-4 md:py-2 rounded-md text-lg z-50 hover:-translate-y-1 duration-300" id="scroll-up"><i class="ri-arrow-up-line"></i></a>
+
+  <!-- Scroll Reveal -->
+  <script src="./assets/js/scrollreveal.min.js"></script>
+
+  <!-- Swiperjs -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+  <script src="main.js"></script>
 
 </body>
 </html>
